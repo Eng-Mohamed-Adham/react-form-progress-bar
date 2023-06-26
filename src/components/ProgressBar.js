@@ -1,4 +1,5 @@
-import useFormContext from '../hooks/useFormContext'
+import useFormContext from '../hooks/useFormContext';
+import burger from './burger1.png';
 
 const ProgressBar = () => {
     const { page, title } = useFormContext()
@@ -17,10 +18,12 @@ const ProgressBar = () => {
 
     return (
         <section className="progress-container">
-            <div className="barmarker-container">
+            {/* <div className="barmarker-container">
                 {steps}
-            </div>
-            <progress className="progress" max="100" value={progress}></progress>
+            </div> */}
+
+            
+            <img className='img-animation' src={burger} alt='burger' />
         </section>
     )
 }

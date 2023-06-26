@@ -1,14 +1,20 @@
-import Form from "./components/Form"
-import ProgressBar from "./components/ProgressBar"
-import { FormProvider } from './context/FormContext'
+import SignUp from "./components/SignUp1";
+import { FormProvider } from './context/FormContext';
+import ProgressBar from './components/ProgressBar';
+import Form from './components/Form';
+
 
 function App() {
 
   return (
     <FormProvider>
-      <ProgressBar />
-      <Form />
-    </FormProvider>
+      
+    <ProgressBar />
+    <Form />
+
+    {/* <LoginPage /> */}
+</FormProvider>
+
   )
 
 }
